@@ -1,1 +1,1 @@
-# 50projects_50days
+This is a lesson off of Udemy by Brad Traversy called 50 Projects in 50 days. Each project is only HTML, CSS, and vanilla Javascript.  It is a way for me to learn new methods of using basic elements of web design.
