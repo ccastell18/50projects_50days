@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,6 +69,7 @@ body {
   height: 65px;
   width: 3px;
   transform-origin: bottom center;
+  transition: all 0.5s ease-in;
 }
 
 .needle.hour {
@@ -81,7 +82,7 @@ body {
 }
 
 .needle.second {
-  transform: translate(-50%, -100%) rotate(30deg);
+  transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
   background-color: #e74c3c;
 }
