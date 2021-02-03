@@ -14,6 +14,22 @@ const randomFunc = {
     symbol: getRandomSymbol
 }
 
+clipboardEl.addEventListener('click', () =>{
+    const textarea = document.createElement('textarea')
+    const password = resultEl.innerText
+
+    if(!password){return}
+
+    textarea.value = password
+    document.body.appendChild(textarea)
+    textarea.select()
+    document.execCommand('copy')
+    textarea.remove()
+    alert("Password copied to clipboard")
+
+    
+})
+
 generateEl.addEventListener('click', () =>{
     //the plus sign converts it to a number
     const length = +lengthEl.value
@@ -61,5 +77,7 @@ function getRandomSymbol(){
     const symbols = "!@#$%^&*(){}=<>/,."
     return symbols[Math.floor(Math.random() * symbols.length)]
 }
+
+
 
 
